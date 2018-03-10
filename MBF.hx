@@ -56,17 +56,17 @@ class MBF extends ROM {
   function processLine(line:Array<String>):Void {
     if (line.length == 1 && line[0] == "") return;
 
-    if (line.length >= 2 && line[0] == "org") {
+    if (line.length > 1 && line[0] == "org") {
       addr = num(line[1]);
       return;
     }
 
-    if (line.length == 3 && line[1] == "equ") {
+    if (line.length > 2 && line[1] == "equ") {
       env[line[0]] = num(line[2]);
       return;
     }
 
-    if (line.length == 3 && line[1] == ".word") {
+    if (line.length > 2 && line[1] == ".word") {
       rom.set(addr,num(line[2]));
       incAddr();
       return;
@@ -74,13 +74,13 @@ class MBF extends ROM {
 
     if (line[0] != "") {
       env[line[0]] = addr;
-      return;
+      if (line.length > 1 && line[1] == "") return;
     }
 
     if (line.length < 2) return;
 
     var operand = 0;
-    if (line.length == 3) operand = num(line[2]);
+    if (line.length > 2) operand = num(line[2]);
 
     var opcode = line[1];
 
