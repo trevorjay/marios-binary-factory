@@ -9,9 +9,9 @@ It produces `mame`-compatible ROMs that are padded to 64 bytes per "page" and pa
 
 ## Requirements
 
-* to build: [haxe](https://haxe.org "Home - Haxe - The Cross-platform Toolkit")
 * to assemble: [Python 3](https://www.python.org/)
 * to run the ROMs: [`mame`](http://mamedev.org/) and the original ROMs from a suitable donor system using the SM510.
+* to build: [haxe](https://haxe.org "Home - Haxe - The Cross-platform Toolkit")
 
 ## Compilation
 
@@ -88,7 +88,7 @@ FOO     equ     $2
         .word   $0
 ```
 
-Note that even though the CPU is 4-bit, the ROM-space is 8-bit and thus `.word` writes a single byte, _not_ a nibble.
+Note that even though the CPU is 4-bit, the ROM-space is 8-bit and thus `.word` writes a full byte and _not_ a single nibble.
 
 ### Location Counter Control
 
