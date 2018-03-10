@@ -10,8 +10,8 @@ It produces `mame`-compatible ROMs that are padded to 64 bytes per "page" and pa
 ## Requirements
 
 * to build: [haxe](https://haxe.org "Home - Haxe - The Cross-platform Toolkit")
-* to assemble: Python 3
-* to run the ROMs: `mame` and the original ROMs from a suitable donor system.
+* to assemble: [Python 3](https://www.python.org/)
+* to run the ROMs: [`mame`](http://mamedev.org/) and the original ROMs from a suitable donor system using the SM510.
 
 ## Compilation
 
@@ -98,7 +98,7 @@ Note that even though the CPU is 4-bit, the ROM-space is 8-bit and thus `.word` 
 
 ### Supported Opcodes
 
-ADD,ADD11,ADX,ATBP,ATFC,ATL,ATPL,ATR,BDC,CEND,COMA,DC,DECB,EXBLA,EXC,EXCD,EXCI,IDIV,INCB,KTA,LAX,LB,LBL,LDA,RC,RM,ROT,RTN0,RTN1,SBM,SC,SKIP,SM,T,TA0,TABL,TAL,TAM,TB,TC,TF1,TF4,TIS,TL,TM,TMI,TML,WR,WS
+ADD, ADD11, ADX, ATBP, ATFC, ATL, ATPL, ATR, BDC, CEND, COMA, DC, DECB, EXBLA, EXC, EXCD, EXCI, IDIV, INCB, KTA, LAX, LB, LBL, LDA, RC, RM, ROT, RTN0, RTN1, SBM, SC, SKIP, SM, T, TA0, TABL, TAL, TAM, TB, TC, TF1, TF4, TIS, TL, TM, TMI, TML, WR, WS
 
 ## Limitations
 
