@@ -109,3 +109,9 @@ The assembler depends on a _strict_ 3-column `[LABEL] [OPCODE] [OPERAND]` format
 ### Numbers
 
 The assembler only understands hexidecimal numbers of the form `$XXXX`. It will handle shorter numbers appropriately. For example: `$0045` is 69 but so is `$45`, `$2` is 2, and so on. It doesn't do size checking, so it's up to you to know if an operation can handle a two bytes (`$XXXX`), a byte (`$XX`), a nibble (`$X`), 2-bits (`$X <= 3`), or a single bit (`$X <= 1`). You're always free to use leading zeroes regardless.
+
+## Thanks
+
+Many thanks to [Sean Riddle](http://www.seanriddle.com/), [Paul Robson](https://www.blogger.com/profile/12278875872815047472), and [hap](https://github.com/happppp). Their research has made homebrew LCD game development and emulation "practical". 
+
+Special thanks to everyone at the [`MAME project`](https://github.com/mamedev/mame) working hard to preserve handheld history as accurately as possible.
