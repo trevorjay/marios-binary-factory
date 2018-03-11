@@ -108,4 +108,4 @@ The assembler depends on a _strict_ 3-column `[LABEL] [OPCODE] [OPERAND]` format
 
 ### Numbers
 
-The assembler only understand hexidecimal numbers of the form `$XXXX`. It will handle shorter numbers appropriately. For example: `$0045` is 69 but so is `$45`, `$2` is 2, and so on. It doesn't do size checking, so it's up to you to know if an operation can handle a full byte, a nibble, or 2-bits. You're always free to use leading zeroes regardless.
+The assembler only understands hexidecimal numbers of the form `$XXXX`. It will handle shorter numbers appropriately. For example: `$0045` is 69 but so is `$45`, `$2` is 2, and so on. It doesn't do size checking, so it's up to you to know if an operation can handle a two bytes (`$XXXX`), a byte (`$XX`), a nibble (`$X`), 2-bits (`$X <= 3`), or a single bit (`$X <= 1`). You're always free to use leading zeroes regardless.
