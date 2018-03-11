@@ -102,4 +102,10 @@ ADD, ADD11, ADX, ATBP, ATFC, ATL, ATPL, ATR, BDC, CEND, COMA, DC, DECB, EXBLA, E
 
 ## Limitations
 
+### Layout
+
 The assembler depends on a _strict_ 3-column `[LABEL] [OPCODE] [OPERAND]` format. Even having trailing space (that doesn't lead into a comment) is likely to cause problems. If you're having trouble getting correct output, look for extraneous whitespace in your assembly.
+
+### Numbers
+
+The assembler only understand hexidecimal numbers of the form `$XXXX`. It will handle shorter numbers appropriately. For example: `$0045` is 69 but so is `$45`, `$2` is 2, and so on.
