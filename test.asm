@@ -14,9 +14,9 @@ R_LOOP  LAX     $F
         RTN0
 
 org     START
-        LB      $2 ; page R
+        LBL     $60 ; page R 
         TM      SETHIGH
-        LB      $3 ; page S 
+        LB      $3 ; page S (thanks to the BM bits from above)
         TM      SETHIGH
 
 ; toggle backplane between $0 and $F
