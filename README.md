@@ -5,7 +5,7 @@ Extremely simple (no expressions or macros) strict 3-column assembler for the Sh
 
 `Mario's Binary Factory` (`mbf`) is an extremely simple assembler for the Sharp SM510. It is a strictly 3-column assembler. Odd things will happen if your code breaks it's expected `[LABEL] [OPCODE] [OPERAND]` format (though a few corner cases involving comments are handled correctly).
 
-It produces `mame`-compatible ROMs that are padded to 64 bytes per "page" and padded overall to 4096 bytes. I'm not sure of the format for the original ROMS but since these already account for the SM510's unique program counter order, conversion should be straight-forward.
+It produces `mame`-compatible ROMs that are padded to 64 bytes per "page" and padded overall to 4096 bytes. I'm not sure of the format for the original ROMs but since these already account for the SM510's unique program counter order, conversion should be straight-forward.
 
 ## Requirements
 

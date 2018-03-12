@@ -26,5 +26,5 @@ org     START
         LAX     $0
 FLASH   ATBP
         TIS
-        EXC
+        EXC     $0
         T       FLASH
