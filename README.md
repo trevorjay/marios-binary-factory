@@ -98,7 +98,7 @@ ADD, ADD11, ADX, ATBP, ATFC, ATL, ATPL, ATR, BDC, CEND, COMA, DC, DECB, EXBLA, E
 
 ### Layout
 
-The assembler depends on a _strict_ 3-column `[LABEL] [OPCODE] [OPERAND]` format. Even having trailing space (that doesn't lead into a comment) is likely to cause problems. If you're having trouble getting correct output, look for extraneous whitespace in your assembly. This includes "empty" lines (i.e. lines which just have a newline) which are interpreted as `SKIP`s. If you want an empty line, make `;` it's first character.
+The assembler depends on a _strict_ 3-column `[LABEL] [OPCODE] [OPERAND]` format. Even having trailing space (that doesn't lead into a comment) is likely to cause problems. If you're having trouble getting correct output, look for extraneous whitespace in your assembly. This includes "empty" lines (i.e. lines which just have a newline) which are interpreted as `SKIP`s. If you want an empty line, make `;` its first character.
 
 ### Numbers
 
